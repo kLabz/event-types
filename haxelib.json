@@ -1,0 +1,13 @@
+{
+  "name": "event-types",
+  "description": "Haxe enums for javascript event types",
+  "releasenote": "Added most common event types",
+  "version": "0.1.0",
+  "url": "https://github.com/kLabz/event-types",
+  "license": "MIT",
+  "tags": ["js", "events"],
+  "classPath": "src",
+  "contributors": [
+    "klabz"
+  ]
+}

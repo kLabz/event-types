@@ -1,0 +1,7 @@
+node_modules
+.build
+.haxelib
+.vim
+package-lock.json
+build.hxml
+
