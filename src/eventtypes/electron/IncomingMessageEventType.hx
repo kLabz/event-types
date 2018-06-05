@@ -3,7 +3,9 @@ package eventtypes.electron;
 /**
 	Auto generated from electron 2.0.2 api docs.
 **/
-@:enum abstract IncomingMessageEventType(String) to String {
+@:enum abstract IncomingMessageEventType(String) to String
+#if hxnodejs to js.node.events.EventEmitter.Event<haxe.Constraints.Function> #end
+{
 	/**
 		The data event is the usual method of transferring response data into
 		applicative code.

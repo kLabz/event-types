@@ -3,7 +3,9 @@ package eventtypes.electron;
 /**
 	Auto generated from electron 2.0.2 api docs.
 **/
-@:enum abstract SystemPreferencesEventType(String) to String {
+@:enum abstract SystemPreferencesEventType(String) to String
+#if hxnodejs to js.node.events.EventEmitter.Event<haxe.Constraints.Function> #end
+{
 	/**
 		Returns:
 		- `event` Event

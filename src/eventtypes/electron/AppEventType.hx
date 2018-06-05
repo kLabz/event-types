@@ -3,7 +3,9 @@ package eventtypes.electron;
 /**
 	Auto generated from electron 2.0.2 api docs.
 **/
-@:enum abstract AppEventType(String) to String {
+@:enum abstract AppEventType(String) to String
+#if hxnodejs to js.node.events.EventEmitter.Event<haxe.Constraints.Function> #end
+{
 	/**
 		Emitted when the application has finished basic startup. On Windows and
 		Linux, the will-finish-launching event is the same as the ready event;

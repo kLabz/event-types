@@ -3,7 +3,9 @@ package eventtypes.electron;
 /**
 	Auto generated from electron 2.0.2 api docs.
 **/
-@:enum abstract DownloadItemEventType(String) to String {
+@:enum abstract DownloadItemEventType(String) to String
+#if hxnodejs to js.node.events.EventEmitter.Event<haxe.Constraints.Function> #end
+{
 	/**
 		Emitted when the download has been updated and is not done. The state
 		can be one of following:

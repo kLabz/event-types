@@ -3,7 +3,9 @@ package eventtypes.electron;
 /**
 	Auto generated from electron 2.0.2 api docs.
 **/
-@:enum abstract NotificationEventType(String) to String {
+@:enum abstract NotificationEventType(String) to String
+#if hxnodejs to js.node.events.EventEmitter.Event<haxe.Constraints.Function> #end
+{
 	/**
 		Emitted when the notification is shown to the user, note this could be
 		fired multiple times as a notification can be shown multiple times
