@@ -24,11 +24,33 @@ element.addEventListener(MouseEventType.Click, myClickHandler);
 ## Event types included
 
 <!-- event-types-start -->
+#### [`AnimationEventType`](src/eventtypes/AnimationEventType.hx) (`String`)
+
+* `AnimationEnd` = `"animationend"`
+* `AnimationIteration` = `"animationiteration"`
+* `AnimationStart` = `"animationstart"`
+
 #### [`ClipboardEventType`](src/eventtypes/ClipboardEventType.hx) (`String`)
 
 * `Copy` = `"copy"`
 * `Cut` = `"cut"`
 * `Paste` = `"paste"`
+
+#### [`CordovaEventType`](src/eventtypes/CordovaEventType.hx) (`String`)
+
+* `DeviceReady` = `"deviceready"`
+* `Pause` = `"pause"`
+* `Resume` = `"resume"`
+
+#### [`DragEventType`](src/eventtypes/DragEventType.hx) (`String`)
+
+* `Drag` = `"drag"`
+* `DragEnd` = `"dragend"`
+* `DragEnter` = `"dragenter"`
+* `DragLeave` = `"dragleave"`
+* `DragOver` = `"dragover"`
+* `DragStart` = `"dragstart"`
+* `Drop` = `"drop"`
 
 #### [`FocusEventType`](src/eventtypes/FocusEventType.hx) (`String`)
 
@@ -37,58 +59,86 @@ element.addEventListener(MouseEventType.Click, myClickHandler);
 * `FocusIn` = `"focusin"`
 * `FocusOut` = `"focusout"`
 
-#### [`DragEventType`](src/eventtypes/DragEventType.hx) (`String`)
+#### [`FormEventType`](src/eventtypes/FormEventType.hx) (`String`)
 
-* `Drag` = `"drag"`
-* `DragStart` = `"dragstart"`
-* `DragEnd` = `"dragend"`
-* `DragEnter` = `"dragenter"`
-* `DragOver` = `"dragover"`
-* `DragLeave` = `"dragleave"`
-* `Drop` = `"drop"`
-
-#### [`MediaEventType`](src/eventtypes/MediaEventType.hx) (`String`)
-
-* `DurationChange` = `"durationchange"`
-* `LoadedMetadata` = `"loadedmetadata"`
-* `LoadedData` = `"loadeddata"`
-* `CanPlay` = `"canplay"`
-* `CanPlayThrough` = `"canplaythrough"`
-* `Ended` = `"ended"`
-* `Emptied` = `"emptied"`
-* `Stalled` = `"stalled"`
-* `Suspend` = `"suspend"`
-* `Play` = `"play"`
-* `Playing` = `"playing"`
-* `Pause` = `"pause"`
-* `Waiting` = `"waiting"`
-* `Seeking` = `"seeking"`
-* `Seeked` = `"seeked"`
-* `RateChange` = `"ratechange"`
-* `TimeUpdate` = `"timeupdate"`
-* `VolumeChange` = `"volumechange"`
-* `Complete` = `"complete"`
-* `AudioProcess` = `"audioprocess"`
+* `Reset` = `"reset"`
+* `Submit` = `"submit"`
 
 #### [`GamePadEventType`](src/eventtypes/GamePadEventType.hx) (`String`)
 
 * `Connected` = `"gamepadconnected"`
 * `Disconnected` = `"gamepaddisconnected"`
 
-#### [`SVGEventType`](src/eventtypes/SVGEventType.hx) (`String`)
+#### [`KeyboardEventType`](src/eventtypes/KeyboardEventType.hx) (`String`)
 
-* `Abort` = `"SVGAbort"`
-* `Error` = `"SVGError"`
-* `Load` = `"SVGLoad"`
-* `Resize` = `"SVGResize"`
-* `Scroll` = `"SVGScroll"`
-* `Unload` = `"SVGUnload"`
-* `Zoom` = `"SVGZoom"`
+* `KeyDown` = `"keydown"`
+* `KeyPress` = `"keypress"`
+* `KeyUp` = `"keyup"`
+
+#### [`MediaEventType`](src/eventtypes/MediaEventType.hx) (`String`)
+
+* `AudioProcess` = `"audioprocess"`
+* `CanPlay` = `"canplay"`
+* `CanPlayThrough` = `"canplaythrough"`
+* `Complete` = `"complete"`
+* `DurationChange` = `"durationchange"`
+* `Emptied` = `"emptied"`
+* `Ended` = `"ended"`
+* `LoadedData` = `"loadeddata"`
+* `LoadedMetadata` = `"loadedmetadata"`
+* `Pause` = `"pause"`
+* `Play` = `"play"`
+* `Playing` = `"playing"`
+* `RateChange` = `"ratechange"`
+* `Seeked` = `"seeked"`
+* `Seeking` = `"seeking"`
+* `Stalled` = `"stalled"`
+* `Suspend` = `"suspend"`
+* `TimeUpdate` = `"timeupdate"`
+* `VolumeChange` = `"volumechange"`
+* `Waiting` = `"waiting"`
+
+#### [`MouseEventType`](src/eventtypes/MouseEventType.hx) (`String`)
+
+* `AuxClick` = `"auxclick"`
+* `Click` = `"click"`
+* `ContextMenu` = `"contextmenu"`
+* `DblClick` = `"dblclick"`
+* `MouseDown` = `"mousedown"`
+* `MouseEnter` = `"mouseenter"`
+* `MouseLeave` = `"mouseleave"`
+* `MouseMove` = `"mousemove"`
+* `MouseOut` = `"mouseout"`
+* `MouseOver` = `"mouseover"`
+* `MouseUp` = `"mouseup"`
+* `PointerLockChange` = `"pointerlockchange"`
+* `PointerLockError` = `"pointerlockerror"`
+* `Select` = `"select"`
+* `Show` = `"show"`
+* `Wheel` = `"wheel"`
 
 #### [`NetworkEventType`](src/eventtypes/NetworkEventType.hx) (`String`)
 
-* `Online` = `"online"`
 * `Offline` = `"offline"`
+* `Online` = `"online"`
+
+#### [`PointerEventType`](src/eventtypes/PointerEventType.hx) (`String`)
+
+* `GotPointerCapture` = `"gotpointercapture"`
+* `LostPointerCapture` = `"lostpointercapture"`
+* `PointerCancel` = `"pointercancel"`
+* `PointerDown` = `"pointerdown"`
+* `PointerEnter` = `"pointerenter"`
+* `PointerLeave` = `"pointerleave"`
+* `PointerMove` = `"pointermove"`
+* `PointerOut` = `"pointerout"`
+* `PointerOver` = `"pointerover"`
+* `PointerUp` = `"pointerup"`
+
+#### [`PrintingEventType`](src/eventtypes/PrintingEventType.hx) (`String`)
+
+* `AfterPrint` = `"afterprint"`
+* `BeforePrint` = `"beforeprint"`
 
 #### [`ProgressEventType`](src/eventtypes/ProgressEventType.hx) (`String`)
 
@@ -100,33 +150,37 @@ element.addEventListener(MouseEventType.Click, myClickHandler);
 * `Progress` = `"progress"`
 * `TimeOut` = `"timeout"`
 
-#### [`KeyboardEventType`](src/eventtypes/KeyboardEventType.hx) (`String`)
-
-* `KeyDown` = `"keydown"`
-* `KeyPress` = `"keypress"`
-* `KeyUp` = `"keyup"`
-
 #### [`ResourceEventType`](src/eventtypes/ResourceEventType.hx) (`String`)
 
+* `Abort` = `"abort"`
+* `BeforeUnload` = `"beforeunload"`
 * `Cached` = `"cached"`
 * `Error` = `"error"`
-* `Abort` = `"abort"`
 * `Load` = `"load"`
-* `BeforeUnload` = `"beforeunload"`
 * `Unload` = `"unload"`
 
-#### [`PointerEventType`](src/eventtypes/PointerEventType.hx) (`String`)
+#### [`SVGEventType`](src/eventtypes/SVGEventType.hx) (`String`)
 
-* `PointerOver` = `"pointerover"`
-* `PointerEnter` = `"pointerenter"`
-* `PointerDown` = `"pointerdown"`
-* `PointerMove` = `"pointermove"`
-* `PointerUp` = `"pointerup"`
-* `PointerCancel` = `"pointercancel"`
-* `PointerOut` = `"pointerout"`
-* `PointerLeave` = `"pointerleave"`
-* `GotPointerCapture` = `"gotpointercapture"`
-* `LostPointerCapture` = `"lostpointercapture"`
+* `Abort` = `"SVGAbort"`
+* `Error` = `"SVGError"`
+* `Load` = `"SVGLoad"`
+* `Resize` = `"SVGResize"`
+* `Scroll` = `"SVGScroll"`
+* `Unload` = `"SVGUnload"`
+* `Zoom` = `"SVGZoom"`
+
+#### [`TimeEventType`](src/eventtypes/TimeEventType.hx) (`String`)
+
+* `Begin` = `"beginEvent"`
+* `End` = `"endEvent"`
+* `Repeat` = `"repeatEvent"`
+
+#### [`TouchEventType`](src/eventtypes/TouchEventType.hx) (`String`)
+
+* `TouchCancel` = `"touchcancel"`
+* `TouchEnd` = `"touchend"`
+* `TouchMove` = `"touchmove"`
+* `TouchStart` = `"touchstart"`
 
 #### [`TransitionEventType`](src/eventtypes/TransitionEventType.hx) (`String`)
 
@@ -134,12 +188,6 @@ element.addEventListener(MouseEventType.Click, myClickHandler);
 * `TransitionEnd` = `"transitionend"`
 * `TransitionRun` = `"transitionrun"`
 * `TransitionStart` = `"transitionstart"`
-
-#### [`TimeEventType`](src/eventtypes/TimeEventType.hx) (`String`)
-
-* `Begin` = `"beginEvent"`
-* `End` = `"endEvent"`
-* `Repeat` = `"repeatEvent"`
 
 #### [`ValueChangeEventType`](src/eventtypes/ValueChangeEventType.hx) (`String`)
 
@@ -151,54 +199,6 @@ element.addEventListener(MouseEventType.Click, myClickHandler);
 * `ReadyStateChange` = `"readystatechange"`
 * `ValueChange` = `"ValueChange"`
 
-#### [`FormEventType`](src/eventtypes/FormEventType.hx) (`String`)
-
-* `Reset` = `"reset"`
-* `Submit` = `"submit"`
-
-#### [`AnimationEventType`](src/eventtypes/AnimationEventType.hx) (`String`)
-
-* `AnimationStart` = `"animationstart"`
-* `AnimationEnd` = `"animationend"`
-* `AnimationIteration` = `"animationiteration"`
-
-#### [`MouseEventType`](src/eventtypes/MouseEventType.hx) (`String`)
-
-* `Click` = `"click"`
-* `DblClick` = `"dblclick"`
-* `AuxClick` = `"auxclick"`
-* `ContextMenu` = `"contextmenu"`
-* `MouseDown` = `"mousedown"`
-* `MouseEnter` = `"mouseenter"`
-* `MouseLeave` = `"mouseleave"`
-* `MouseMove` = `"mousemove"`
-* `MouseOut` = `"mouseout"`
-* `MouseOver` = `"mouseover"`
-* `MouseUp` = `"mouseup"`
-* `Show` = `"show"`
-* `Wheel` = `"wheel"`
-* `Select` = `"select"`
-* `PointerLockChange` = `"pointerlockchange"`
-* `PointerLockError` = `"pointerlockerror"`
-
-#### [`PrintingEventType`](src/eventtypes/PrintingEventType.hx) (`String`)
-
-* `BeforePrint` = `"beforeprint"`
-* `AfterPrint` = `"afterprint"`
-
-#### [`TouchEventType`](src/eventtypes/TouchEventType.hx) (`String`)
-
-* `TouchCancel` = `"touchcancel"`
-* `TouchEnd` = `"touchend"`
-* `TouchMove` = `"touchmove"`
-* `TouchStart` = `"touchstart"`
-
-#### [`CordovaEventType`](src/eventtypes/CordovaEventType.hx) (`String`)
-
-* `DeviceReady` = `"deviceready"`
-* `Pause` = `"pause"`
-* `Resume` = `"resume"`
-
 #### [`ViewEventType`](src/eventtypes/ViewEventType.hx) (`String`)
 
 * `FullScreenChange` = `"onfullscreenchange"`
@@ -208,163 +208,143 @@ element.addEventListener(MouseEventType.Click, myClickHandler);
 
 ### Electron
 
+#### [`AppEventType`](src/eventtypes/electron/AppEventType.hx) (`String`)
+
+* `AccessibilitySupportChanged` = `"accessibility-support-changed"`
+* `Activate` = `"activate"`
+* `ActivityWasContinued` = `"activity-was-continued"`
+* `BeforeQuit` = `"before-quit"`
+* `BrowserWindowBlur` = `"browser-window-blur"`
+* `BrowserWindowCreated` = `"browser-window-created"`
+* `BrowserWindowFocus` = `"browser-window-focus"`
+* `CertificateError` = `"certificate-error"`
+* `ContinueActivity` = `"continue-activity"`
+* `ContinueActivityError` = `"continue-activity-error"`
+* `GpuProcessCrashed` = `"gpu-process-crashed"`
+* `Login` = `"login"`
+* `NewWindowForTab` = `"new-window-for-tab"`
+* `OpenFile` = `"open-file"`
+* `OpenUrl` = `"open-url"`
+* `Quit` = `"quit"`
+* `Ready` = `"ready"`
+* `SelectClientCertificate` = `"select-client-certificate"`
+* `UpdateActivityState` = `"update-activity-state"`
+* `WebContentsCreated` = `"web-contents-created"`
+* `WillContinueActivity` = `"will-continue-activity"`
+* `WillFinishLaunching` = `"will-finish-launching"`
+* `WillQuit` = `"will-quit"`
+* `WindowAllClosed` = `"window-all-closed"`
+
+#### [`AutoUpdaterEventType`](src/eventtypes/electron/AutoUpdaterEventType.hx) (`String`)
+
+* `CheckingForUpdate` = `"checking-for-update"`
+* `Error` = `"error"`
+* `UpdateAvailable` = `"update-available"`
+* `UpdateDownloaded` = `"update-downloaded"`
+* `UpdateNotAvailable` = `"update-not-available"`
+
+#### [`BrowserWindowEventType`](src/eventtypes/electron/BrowserWindowEventType.hx) (`String`)
+
+* `AppCommand` = `"app-command"`
+* `Blur` = `"blur"`
+* `Close` = `"close"`
+* `Closed` = `"closed"`
+* `EnterFullScreen` = `"enter-full-screen"`
+* `EnterHtmlFullScreen` = `"enter-html-full-screen"`
+* `Focus` = `"focus"`
+* `Hide` = `"hide"`
+* `LeaveFullScreen` = `"leave-full-screen"`
+* `LeaveHtmlFullScreen` = `"leave-html-full-screen"`
+* `Maximize` = `"maximize"`
+* `Minimize` = `"minimize"`
+* `Move` = `"move"`
+* `Moved` = `"moved"`
+* `NewWindowForTab` = `"new-window-for-tab"`
+* `PageTitleUpdated` = `"page-title-updated"`
+* `ReadyToShow` = `"ready-to-show"`
+* `Resize` = `"resize"`
+* `Responsive` = `"responsive"`
+* `Restore` = `"restore"`
+* `ScrollTouchBegin` = `"scroll-touch-begin"`
+* `ScrollTouchEdge` = `"scroll-touch-edge"`
+* `ScrollTouchEnd` = `"scroll-touch-end"`
+* `SessionEnd` = `"session-end"`
+* `SheetBegin` = `"sheet-begin"`
+* `SheetEnd` = `"sheet-end"`
+* `Show` = `"show"`
+* `Swipe` = `"swipe"`
+* `Unmaximize` = `"unmaximize"`
+* `Unresponsive` = `"unresponsive"`
+
 #### [`ClientRequestEventType`](src/eventtypes/electron/ClientRequestEventType.hx) (`String`)
 
-* `Response` = `"response"`
-* `Login` = `"login"`
-* `Finish` = `"finish"`
 * `Abort` = `"abort"`
+* `Close` = `"close"`
 * `Error` = `"error"`
-* `Close` = `"close"`
+* `Finish` = `"finish"`
+* `Login` = `"login"`
 * `Redirect` = `"redirect"`
+* `Response` = `"response"`
 
-#### [`NotificationEventType`](src/eventtypes/electron/NotificationEventType.hx) (`String`)
+#### [`CookiesEventType`](src/eventtypes/electron/CookiesEventType.hx) (`String`)
 
-* `Show` = `"show"`
-* `Click` = `"click"`
-* `Close` = `"close"`
-* `Reply` = `"reply"`
-* `Action` = `"action"`
+* `Changed` = `"changed"`
 
 #### [`DebuggerEventType`](src/eventtypes/electron/DebuggerEventType.hx) (`String`)
 
 * `Detach` = `"detach"`
 * `Message` = `"message"`
 
-#### [`MenuEventType`](src/eventtypes/electron/MenuEventType.hx) (`String`)
+#### [`DownloadItemEventType`](src/eventtypes/electron/DownloadItemEventType.hx) (`String`)
 
-* `MenuWillShow` = `"menu-will-show"`
-* `MenuWillClose` = `"menu-will-close"`
-
-#### [`BrowserWindowEventType`](src/eventtypes/electron/BrowserWindowEventType.hx) (`String`)
-
-* `PageTitleUpdated` = `"page-title-updated"`
-* `Close` = `"close"`
-* `Closed` = `"closed"`
-* `SessionEnd` = `"session-end"`
-* `Unresponsive` = `"unresponsive"`
-* `Responsive` = `"responsive"`
-* `Blur` = `"blur"`
-* `Focus` = `"focus"`
-* `Show` = `"show"`
-* `Hide` = `"hide"`
-* `ReadyToShow` = `"ready-to-show"`
-* `Maximize` = `"maximize"`
-* `Unmaximize` = `"unmaximize"`
-* `Minimize` = `"minimize"`
-* `Restore` = `"restore"`
-* `Resize` = `"resize"`
-* `Move` = `"move"`
-* `Moved` = `"moved"`
-* `EnterFullScreen` = `"enter-full-screen"`
-* `LeaveFullScreen` = `"leave-full-screen"`
-* `EnterHtmlFullScreen` = `"enter-html-full-screen"`
-* `LeaveHtmlFullScreen` = `"leave-html-full-screen"`
-* `AppCommand` = `"app-command"`
-* `ScrollTouchBegin` = `"scroll-touch-begin"`
-* `ScrollTouchEnd` = `"scroll-touch-end"`
-* `ScrollTouchEdge` = `"scroll-touch-edge"`
-* `Swipe` = `"swipe"`
-* `SheetBegin` = `"sheet-begin"`
-* `SheetEnd` = `"sheet-end"`
-* `NewWindowForTab` = `"new-window-for-tab"`
-
-#### [`WebContentsEventType`](src/eventtypes/electron/WebContentsEventType.hx) (`String`)
-
-* `DidFinishLoad` = `"did-finish-load"`
-* `DidFailLoad` = `"did-fail-load"`
-* `DidFrameFinishLoad` = `"did-frame-finish-load"`
-* `DidStartLoading` = `"did-start-loading"`
-* `DidStopLoading` = `"did-stop-loading"`
-* `DidGetResponseDetails` = `"did-get-response-details"`
-* `DidGetRedirectRequest` = `"did-get-redirect-request"`
-* `DomReady` = `"dom-ready"`
-* `PageFaviconUpdated` = `"page-favicon-updated"`
-* `NewWindow` = `"new-window"`
-* `WillNavigate` = `"will-navigate"`
-* `DidNavigate` = `"did-navigate"`
-* `DidNavigateInPage` = `"did-navigate-in-page"`
-* `WillPreventUnload` = `"will-prevent-unload"`
-* `Crashed` = `"crashed"`
-* `PluginCrashed` = `"plugin-crashed"`
-* `Destroyed` = `"destroyed"`
-* `BeforeInputEvent` = `"before-input-event"`
-* `DevtoolsOpened` = `"devtools-opened"`
-* `DevtoolsClosed` = `"devtools-closed"`
-* `DevtoolsFocused` = `"devtools-focused"`
-* `CertificateError` = `"certificate-error"`
-* `SelectClientCertificate` = `"select-client-certificate"`
-* `Login` = `"login"`
-* `FoundInPage` = `"found-in-page"`
-* `MediaStartedPlaying` = `"media-started-playing"`
-* `MediaPaused` = `"media-paused"`
-* `DidChangeThemeColor` = `"did-change-theme-color"`
-* `UpdateTargetUrl` = `"update-target-url"`
-* `CursorChanged` = `"cursor-changed"`
-* `ContextMenu` = `"context-menu"`
-* `SelectBluetoothDevice` = `"select-bluetooth-device"`
-* `Paint` = `"paint"`
-* `DevtoolsReloadPage` = `"devtools-reload-page"`
-* `WillAttachWebview` = `"will-attach-webview"`
-* `DidAttachWebview` = `"did-attach-webview"`
-* `ConsoleMessage` = `"console-message"`
-
-#### [`ScreenEventType`](src/eventtypes/electron/ScreenEventType.hx) (`String`)
-
-* `DisplayAdded` = `"display-added"`
-* `DisplayRemoved` = `"display-removed"`
-* `DisplayMetricsChanged` = `"display-metrics-changed"`
-
-#### [`AppEventType`](src/eventtypes/electron/AppEventType.hx) (`String`)
-
-* `WillFinishLaunching` = `"will-finish-launching"`
-* `Ready` = `"ready"`
-* `WindowAllClosed` = `"window-all-closed"`
-* `BeforeQuit` = `"before-quit"`
-* `WillQuit` = `"will-quit"`
-* `Quit` = `"quit"`
-* `OpenFile` = `"open-file"`
-* `OpenUrl` = `"open-url"`
-* `Activate` = `"activate"`
-* `ContinueActivity` = `"continue-activity"`
-* `WillContinueActivity` = `"will-continue-activity"`
-* `ContinueActivityError` = `"continue-activity-error"`
-* `ActivityWasContinued` = `"activity-was-continued"`
-* `UpdateActivityState` = `"update-activity-state"`
-* `NewWindowForTab` = `"new-window-for-tab"`
-* `BrowserWindowBlur` = `"browser-window-blur"`
-* `BrowserWindowFocus` = `"browser-window-focus"`
-* `BrowserWindowCreated` = `"browser-window-created"`
-* `WebContentsCreated` = `"web-contents-created"`
-* `CertificateError` = `"certificate-error"`
-* `SelectClientCertificate` = `"select-client-certificate"`
-* `Login` = `"login"`
-* `GpuProcessCrashed` = `"gpu-process-crashed"`
-* `AccessibilitySupportChanged` = `"accessibility-support-changed"`
-
-#### [`SessionEventType`](src/eventtypes/electron/SessionEventType.hx) (`String`)
-
-* `WillDownload` = `"will-download"`
-
-#### [`AutoUpdaterEventType`](src/eventtypes/electron/AutoUpdaterEventType.hx) (`String`)
-
-* `Error` = `"error"`
-* `CheckingForUpdate` = `"checking-for-update"`
-* `UpdateAvailable` = `"update-available"`
-* `UpdateNotAvailable` = `"update-not-available"`
-* `UpdateDownloaded` = `"update-downloaded"`
-
-#### [`PowerMonitorEventType`](src/eventtypes/electron/PowerMonitorEventType.hx) (`String`)
-
-* `Suspend` = `"suspend"`
-* `Resume` = `"resume"`
-* `OnAc` = `"on-ac"`
-* `OnBattery` = `"on-battery"`
-* `Shutdown` = `"shutdown"`
+* `Done` = `"done"`
+* `Updated` = `"updated"`
 
 #### [`InAppPurchaseEventType`](src/eventtypes/electron/InAppPurchaseEventType.hx) (`String`)
 
 * `TransactionsUpdated` = `"transactions-updated"`
+
+#### [`IncomingMessageEventType`](src/eventtypes/electron/IncomingMessageEventType.hx) (`String`)
+
+* `Aborted` = `"aborted"`
+* `Data` = `"data"`
+* `End` = `"end"`
+* `Error` = `"error"`
+
+#### [`MenuEventType`](src/eventtypes/electron/MenuEventType.hx) (`String`)
+
+* `MenuWillClose` = `"menu-will-close"`
+* `MenuWillShow` = `"menu-will-show"`
+
+#### [`NotificationEventType`](src/eventtypes/electron/NotificationEventType.hx) (`String`)
+
+* `Action` = `"action"`
+* `Click` = `"click"`
+* `Close` = `"close"`
+* `Reply` = `"reply"`
+* `Show` = `"show"`
+
+#### [`PowerMonitorEventType`](src/eventtypes/electron/PowerMonitorEventType.hx) (`String`)
+
+* `OnAc` = `"on-ac"`
+* `OnBattery` = `"on-battery"`
+* `Resume` = `"resume"`
+* `Shutdown` = `"shutdown"`
+* `Suspend` = `"suspend"`
+
+#### [`ProcessEventType`](src/eventtypes/electron/ProcessEventType.hx) (`String`)
+
+* `Loaded` = `"loaded"`
+
+#### [`ScreenEventType`](src/eventtypes/electron/ScreenEventType.hx) (`String`)
+
+* `DisplayAdded` = `"display-added"`
+* `DisplayMetricsChanged` = `"display-metrics-changed"`
+* `DisplayRemoved` = `"display-removed"`
+
+#### [`SessionEventType`](src/eventtypes/electron/SessionEventType.hx) (`String`)
+
+* `WillDownload` = `"will-download"`
 
 #### [`SystemPreferencesEventType`](src/eventtypes/electron/SystemPreferencesEventType.hx) (`String`)
 
@@ -372,42 +352,62 @@ element.addEventListener(MouseEventType.Click, myClickHandler);
 * `ColorChanged` = `"color-changed"`
 * `InvertedColorSchemeChanged` = `"inverted-color-scheme-changed"`
 
-#### [`IncomingMessageEventType`](src/eventtypes/electron/IncomingMessageEventType.hx) (`String`)
-
-* `Data` = `"data"`
-* `End` = `"end"`
-* `Aborted` = `"aborted"`
-* `Error` = `"error"`
-
 #### [`TrayEventType`](src/eventtypes/electron/TrayEventType.hx) (`String`)
 
-* `Click` = `"click"`
-* `RightClick` = `"right-click"`
-* `DoubleClick` = `"double-click"`
-* `BalloonShow` = `"balloon-show"`
 * `BalloonClick` = `"balloon-click"`
 * `BalloonClosed` = `"balloon-closed"`
+* `BalloonShow` = `"balloon-show"`
+* `Click` = `"click"`
+* `DoubleClick` = `"double-click"`
+* `DragEnd` = `"drag-end"`
+* `DragEnter` = `"drag-enter"`
+* `DragLeave` = `"drag-leave"`
 * `Drop` = `"drop"`
 * `DropFiles` = `"drop-files"`
 * `DropText` = `"drop-text"`
-* `DragEnter` = `"drag-enter"`
-* `DragLeave` = `"drag-leave"`
-* `DragEnd` = `"drag-end"`
 * `MouseEnter` = `"mouse-enter"`
 * `MouseLeave` = `"mouse-leave"`
 * `MouseMove` = `"mouse-move"`
+* `RightClick` = `"right-click"`
 
-#### [`ProcessEventType`](src/eventtypes/electron/ProcessEventType.hx) (`String`)
+#### [`WebContentsEventType`](src/eventtypes/electron/WebContentsEventType.hx) (`String`)
 
-* `Loaded` = `"loaded"`
-
-#### [`CookiesEventType`](src/eventtypes/electron/CookiesEventType.hx) (`String`)
-
-* `Changed` = `"changed"`
-
-#### [`DownloadItemEventType`](src/eventtypes/electron/DownloadItemEventType.hx) (`String`)
-
-* `Updated` = `"updated"`
-* `Done` = `"done"`
+* `BeforeInputEvent` = `"before-input-event"`
+* `CertificateError` = `"certificate-error"`
+* `ConsoleMessage` = `"console-message"`
+* `ContextMenu` = `"context-menu"`
+* `Crashed` = `"crashed"`
+* `CursorChanged` = `"cursor-changed"`
+* `Destroyed` = `"destroyed"`
+* `DevtoolsClosed` = `"devtools-closed"`
+* `DevtoolsFocused` = `"devtools-focused"`
+* `DevtoolsOpened` = `"devtools-opened"`
+* `DevtoolsReloadPage` = `"devtools-reload-page"`
+* `DidAttachWebview` = `"did-attach-webview"`
+* `DidChangeThemeColor` = `"did-change-theme-color"`
+* `DidFailLoad` = `"did-fail-load"`
+* `DidFinishLoad` = `"did-finish-load"`
+* `DidFrameFinishLoad` = `"did-frame-finish-load"`
+* `DidGetRedirectRequest` = `"did-get-redirect-request"`
+* `DidGetResponseDetails` = `"did-get-response-details"`
+* `DidNavigate` = `"did-navigate"`
+* `DidNavigateInPage` = `"did-navigate-in-page"`
+* `DidStartLoading` = `"did-start-loading"`
+* `DidStopLoading` = `"did-stop-loading"`
+* `DomReady` = `"dom-ready"`
+* `FoundInPage` = `"found-in-page"`
+* `Login` = `"login"`
+* `MediaPaused` = `"media-paused"`
+* `MediaStartedPlaying` = `"media-started-playing"`
+* `NewWindow` = `"new-window"`
+* `PageFaviconUpdated` = `"page-favicon-updated"`
+* `Paint` = `"paint"`
+* `PluginCrashed` = `"plugin-crashed"`
+* `SelectBluetoothDevice` = `"select-bluetooth-device"`
+* `SelectClientCertificate` = `"select-client-certificate"`
+* `UpdateTargetUrl` = `"update-target-url"`
+* `WillAttachWebview` = `"will-attach-webview"`
+* `WillNavigate` = `"will-navigate"`
+* `WillPreventUnload` = `"will-prevent-unload"`
 <!-- event-types-end -->
 
