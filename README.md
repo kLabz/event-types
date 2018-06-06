@@ -201,7 +201,7 @@ element.addEventListener(MouseEventType.Click, myClickHandler);
 
 #### [`ViewEventType`](src/eventtypes/ViewEventType.hx) (`String`)
 
-* `FullScreenChange` = `"onfullscreenchange"`
+* `FullScreenChange` = `"fullscreenchange"`
 * `FullScreenError` = `"fullscreenerror"`
 * `Resize` = `"resize"`
 * `Scroll` = `"scroll"`

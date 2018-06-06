@@ -2,12 +2,12 @@ package eventtypes;
 
 @:enum abstract ViewEventType(String) to String {
 	/**
-		The onfullscreenchange event is fired when the browser is switched
+		The fullscreenchange event is fired when the browser is switched
 		to/out-of fullscreen mode.
 
 		See https://developer.mozilla.org/en-US/docs/Web/Events/fullscreenchange
 	*/
-	var FullScreenChange = 'onfullscreenchange';
+	var FullScreenChange = 'fullscreenchange';
 
 	/**
 		The fullscreenerror event is fired when the browser cannot switch to
