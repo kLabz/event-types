@@ -30,11 +30,68 @@ element.addEventListener(MouseEventType.Click, myClickHandler);
 * `AnimationIteration` = `"animationiteration"`
 * `AnimationStart` = `"animationstart"`
 
+#### [`BatteryEventType`](src/eventtypes/BatteryEventType.hx) (`String`)
+
+* `ChargingChange` = `"chargingchange"`
+* `ChargingTimeChange` = `"chargingtimechange"`
+* `DischargingTimeChange` = `"dischargingtimechange"`
+* `LevelChange` = `"levelchange"`
+
+#### [`CallEventType`](src/eventtypes/CallEventType.hx) (`String`)
+
+* `Alerting` = `"alerting"`
+* `Busy` = `"busy"`
+* `CFStateChange` = `"cfstatechange"`
+* `CallsChanged` = `"callschanged"`
+* `Connected` = `"connected"`
+* `Connecting` = `"connecting"`
+* `Dialing` = `"dialing"`
+* `Disconnected` = `"disconnected"`
+* `Disconnecting` = `"disconnecting"`
+* `Error` = `"error"`
+* `Held` = `"held"`
+* `Incoming` = `"incoming"`
+* `Resuming` = `"resuming"`
+* `StateChange` = `"statechange"`
+* `VoiceChange` = `"voicechange"`
+
 #### [`ClipboardEventType`](src/eventtypes/ClipboardEventType.hx) (`String`)
 
 * `Copy` = `"copy"`
 * `Cut` = `"cut"`
 * `Paste` = `"paste"`
+
+#### [`DOMMutationEventType`](src/eventtypes/DOMMutationEventType.hx) (`String`)
+
+* `DOMAttrModified` = `"DOMAttrModified"`
+* `DOMAttributeNameChanged` = `"DOMAttributeNameChanged"`
+* `DOMCharacterDataModified` = `"DOMCharacterDataModified"`
+* `DOMContentLoaded` = `"DOMContentLoaded"`
+* `DOMElementNameChanged` = `"DOMElementNameChanged"`
+* `DOMNodeInserted` = `"DOMNodeInserted"`
+* `DOMNodeInsertedIntoDocument` = `"DOMNodeInsertedIntoDocument"`
+* `DOMNodeRemoved` = `"DOMNodeRemoved"`
+* `DOMNodeRemovedFromDocument` = `"DOMNodeRemovedFromDocument"`
+* `DOMSubtreeModified` = `"DOMSubtreeModified"`
+
+#### [`DatabaseEventType`](src/eventtypes/DatabaseEventType.hx) (`String`)
+
+* `Abort` = `"abort"`
+* `Blocked` = `"blocked"`
+* `Complete` = `"complete"`
+* `Error` = `"error"`
+* `Success` = `"success"`
+* `UpgradeNeeded` = `"upgradeneeded"`
+* `VersionChange` = `"versionchange"`
+
+#### [`DocumentEventType`](src/eventtypes/DocumentEventType.hx) (`String`)
+
+* `DOMLinkAdded` = `"DOMLinkAdded"`
+* `DOMLinkRemoved` = `"DOMLinkRemoved"`
+* `DOMMetaAdded` = `"DOMMetaAdded"`
+* `DOMMetaRemoved` = `"DOMMetaRemoved"`
+* `DOMModalDialogClosed` = `"DOMModalDialogClosed"`
+* `DOMWillOpenModalDialog` = `"DOMWillOpenModalDialog"`
 
 #### [`DragEventType`](src/eventtypes/DragEventType.hx) (`String`)
 
@@ -92,6 +149,11 @@ element.addEventListener(MouseEventType.Click, myClickHandler);
 * `VolumeChange` = `"volumechange"`
 * `Waiting` = `"waiting"`
 
+#### [`MenuEventType`](src/eventtypes/MenuEventType.hx) (`String`)
+
+* `DOMMenuItemActive` = `"DOMMenuItemActive"`
+* `DOMMenuItemInactive` = `"DOMMenuItemInactive"`
+
 #### [`MouseEventType`](src/eventtypes/MouseEventType.hx) (`String`)
 
 * `AuxClick` = `"auxclick"`
@@ -116,6 +178,11 @@ element.addEventListener(MouseEventType.Click, myClickHandler);
 * `Offline` = `"offline"`
 * `Online` = `"online"`
 
+#### [`NotificationEventType`](src/eventtypes/NotificationEventType.hx) (`String`)
+
+* `AlertActive` = `"AlertActive"`
+* `AlertClose` = `"AlertClose"`
+
 #### [`PointerEventType`](src/eventtypes/PointerEventType.hx) (`String`)
 
 * `GotPointerCapture` = `"gotpointercapture"`
@@ -128,6 +195,14 @@ element.addEventListener(MouseEventType.Click, myClickHandler);
 * `PointerOut` = `"pointerout"`
 * `PointerOver` = `"pointerover"`
 * `PointerUp` = `"pointerup"`
+
+#### [`PopupEventType`](src/eventtypes/PopupEventType.hx) (`String`)
+
+* `DOMPopupBlocked` = `"DOMPopupBlocked"`
+* `PopupHidden` = `"popuphidden"`
+* `PopupHiding` = `"popuphiding"`
+* `PopupShowing` = `"popupshowing"`
+* `PopupShown` = `"popupshown"`
 
 #### [`PrintingEventType`](src/eventtypes/PrintingEventType.hx) (`String`)
 
@@ -163,6 +238,63 @@ element.addEventListener(MouseEventType.Click, myClickHandler);
 * `Unload` = `"SVGUnload"`
 * `Zoom` = `"SVGZoom"`
 
+#### [`ScriptEventType`](src/eventtypes/ScriptEventType.hx) (`String`)
+
+* `AfterScriptExecute` = `"afterscriptexecute"`
+* `BeforeScriptExecute` = `"beforescriptexecute"`
+
+#### [`SensorEventType`](src/eventtypes/SensorEventType.hx) (`String`)
+
+* `CompassNeedsCalibration` = `"compassneedscalibration"`
+* `DeviceLight` = `"devicelight"`
+* `DeviceMotion` = `"devicemotion"`
+* `DeviceOrientation` = `"deviceorientation"`
+* `DeviceProximity` = `"deviceproximity"`
+* `MozOrientation` = `"MozOrientation"`
+* `OrientationChange` = `"orientationchange"`
+* `UserProximity` = `"userproximity"`
+
+#### [`SessionHistoryEventType`](src/eventtypes/SessionHistoryEventType.hx) (`String`)
+
+* `PageHide` = `"pagehide"`
+* `PageShow` = `"pageshow"`
+* `PopState` = `"popstate"`
+
+#### [`SmartcardEventType`](src/eventtypes/SmartcardEventType.hx) (`String`)
+
+* `CardStateChange` = `"cardstatechange"`
+* `ICCCardLockError` = `"icccardlockerror"`
+* `ICCInfoChange` = `"iccinfochange"`
+* `SmartcardInsert` = `"smartcard-insert"`
+* `SmartcardRemove` = `"smartcard-remove"`
+* `StkCommand` = `"stkcommand"`
+* `StkSessionEnd` = `"stksessionend"`
+
+#### [`StorageEventType`](src/eventtypes/StorageEventType.hx) (`String`)
+
+* `Change` = `"change"`
+* `Storage` = `"storage"`
+
+#### [`TabEventType`](src/eventtypes/TabEventType.hx) (`String`)
+
+* `SSTabClosing` = `"SSTabClosing"`
+* `SSTabRestored` = `"SSTabRestored"`
+* `SSTabRestoring` = `"SSTabRestoring"`
+* `TabClose` = `"TabClose"`
+* `TabHide` = `"TabHide"`
+* `TabOpen` = `"TabOpen"`
+* `TabPinned` = `"TabPinned"`
+* `TabSelect` = `"TabSelect"`
+* `TabShow` = `"TabShow"`
+* `TabUnpinned` = `"TabUnpinned"`
+* `VisibilityChange` = `"visibilitychange"`
+
+#### [`TextCompositionEventType`](src/eventtypes/TextCompositionEventType.hx) (`String`)
+
+* `CompositionEnd` = `"compositionend"`
+* `CompositionStart` = `"compositionstart"`
+* `CompositionUpdate` = `"compositionupdate"`
+
 #### [`TimeEventType`](src/eventtypes/TimeEventType.hx) (`String`)
 
 * `Begin` = `"beginEvent"`
@@ -183,6 +315,15 @@ element.addEventListener(MouseEventType.Click, myClickHandler);
 * `TransitionRun` = `"transitionrun"`
 * `TransitionStart` = `"transitionstart"`
 
+#### [`UpdateEventType`](src/eventtypes/UpdateEventType.hx) (`String`)
+
+* `Checking` = `"checking"`
+* `Downloading` = `"downloading"`
+* `Error` = `"error"`
+* `NoUpdate` = `"noupdate"`
+* `Obsolete` = `"obsolete"`
+* `UpdateReady` = `"updateready"`
+
 #### [`ValueChangeEventType`](src/eventtypes/ValueChangeEventType.hx) (`String`)
 
 * `Broadcast` = `"broadcast"`
@@ -199,6 +340,33 @@ element.addEventListener(MouseEventType.Click, myClickHandler);
 * `FullScreenError` = `"fullscreenerror"`
 * `Resize` = `"resize"`
 * `Scroll` = `"scroll"`
+
+#### [`WebVREventType`](src/eventtypes/WebVREventType.hx) (`String`)
+
+* `VRDisplayActivate` = `"vrdisplayactivate"`
+* `VRDisplayBlur` = `"vrdisplayblur"`
+* `VRDisplayConnect` = `"vrdisplayconnect"`
+* `VRDisplayDeactivate` = `"vrdisplaydeactivate"`
+* `VRDisplayDisconnect` = `"vrdisplaydisconnect"`
+* `VRDisplayFocus` = `"vrdisplayfocus"`
+* `VRDisplayPresentChange` = `"vrdisplaypresentchange"`
+
+#### [`WebsocketEventType`](src/eventtypes/WebsocketEventType.hx) (`String`)
+
+* `Close` = `"close"`
+* `Error` = `"error"`
+* `Message` = `"message"`
+* `Open` = `"open"`
+
+#### [`WindowEventType`](src/eventtypes/WindowEventType.hx) (`String`)
+
+* `Close` = `"close"`
+* `DOMTitleChanged` = `"DOMTitleChanged"`
+* `DOMWindowClose` = `"DOMWindowClose"`
+* `DOMWindowCreated` = `"DOMWindowCreated"`
+* `SSWindowClosing` = `"SSWindowClosing"`
+* `SSWindowStateBusy` = `"SSWindowStateBusy"`
+* `SSWindowStateReady` = `"SSWindowStateReady"`
 
 ### Cordova
 

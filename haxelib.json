@@ -1,8 +1,8 @@
 {
   "name": "event-types",
   "description": "Haxe enums for javascript event types",
-  "releasenote": "Moved cordova event types",
-  "version": "0.4.0",
+  "releasenote": "Generated event types from MDN events reference",
+  "version": "0.5.0",
   "url": "https://github.com/kLabz/event-types",
   "license": "MIT",
   "tags": ["js", "events"],
