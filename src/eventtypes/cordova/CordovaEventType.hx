@@ -1,4 +1,4 @@
-package eventtypes;
+package eventtypes.cordova;
 
 @:enum abstract CordovaEventType(String) to String {
 	/**

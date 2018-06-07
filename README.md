@@ -36,12 +36,6 @@ element.addEventListener(MouseEventType.Click, myClickHandler);
 * `Cut` = `"cut"`
 * `Paste` = `"paste"`
 
-#### [`CordovaEventType`](src/eventtypes/CordovaEventType.hx) (`String`)
-
-* `DeviceReady` = `"deviceready"`
-* `Pause` = `"pause"`
-* `Resume` = `"resume"`
-
 #### [`DragEventType`](src/eventtypes/DragEventType.hx) (`String`)
 
 * `Drag` = `"drag"`
@@ -205,6 +199,14 @@ element.addEventListener(MouseEventType.Click, myClickHandler);
 * `FullScreenError` = `"fullscreenerror"`
 * `Resize` = `"resize"`
 * `Scroll` = `"scroll"`
+
+### Cordova
+
+#### [`CordovaEventType`](src/eventtypes/cordova/CordovaEventType.hx) (`String`)
+
+* `DeviceReady` = `"deviceready"`
+* `Pause` = `"pause"`
+* `Resume` = `"resume"`
 
 ### Electron
 
