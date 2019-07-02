@@ -1,8 +1,8 @@
 {
   "name": "event-types",
   "description": "Haxe enums for javascript event types",
-  "releasenote": "Added KeyboardEvent.key helper: KeyboardEventKey",
-  "version": "0.6.0",
+  "releasenote": "Added InputEventType + EventTypes helper",
+  "version": "0.7.0",
   "url": "https://github.com/kLabz/event-types",
   "license": "MIT",
   "tags": ["js", "events"],

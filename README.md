@@ -21,6 +21,18 @@ import eventtypes.MouseEventType;
 element.addEventListener(MouseEventType.Click, myClickHandler);
 ```
 
+Alternatively, you can import all top-level event-type definitions with:
+
+```haxe
+import EventTypes;
+
+// ...
+
+// Avoid using magic strings for event types:
+element.addEventListener(MouseEventType.Click, myClickHandler);
+element.addEventListener(KeyboardEventType.KeyDown, myKeyDownHandler);
+```
+
 ## Event types included
 
 <!-- event-types-start -->
@@ -119,6 +131,11 @@ element.addEventListener(MouseEventType.Click, myClickHandler);
 
 * `Connected` = `"gamepadconnected"`
 * `Disconnected` = `"gamepaddisconnected"`
+
+#### [`InputEventType`](src/eventtypes/InputEventType.hx) (`String`)
+
+* `Change` = `"change"`
+* `Input` = `"input"`
 
 #### [`KeyboardEventType`](src/eventtypes/KeyboardEventType.hx) (`String`)
 
