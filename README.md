@@ -392,6 +392,14 @@ element.addEventListener(KeyboardEventType.KeyDown, myKeyDownHandler);
 * `DeviceReady` = `"deviceready"`
 * `Pause` = `"pause"`
 * `Resume` = `"resume"`
+* `BackButton` = `"backbutton"`
+* `MenuButton` = `"menubutton"`
+* `SearchButton` = `"searchbutton"`
+* `StartCallButton` = `"startcallbutton"`
+* `EndCallButton` = `"endcallbutton"`
+* `VolumeDownButton` = `"volumedownbutton"`
+* `VolumeUpButton` = `"volumeupbutton"`
+* `Activated` = `"activated"`
 
 ### Electron
 
