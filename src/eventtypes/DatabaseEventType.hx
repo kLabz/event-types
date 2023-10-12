@@ -3,7 +3,7 @@ package eventtypes;
 /**
 	Auto generated from MDN event reference.
 **/
-@:enum abstract DatabaseEventType(String) to String {
+enum abstract DatabaseEventType(String) to String {
 	var Abort = "abort";
 	var Blocked = "blocked";
 	var Complete = "complete";

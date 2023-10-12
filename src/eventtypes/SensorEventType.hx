@@ -3,7 +3,7 @@ package eventtypes;
 /**
 	Auto generated from MDN event reference.
 **/
-@:enum abstract SensorEventType(String) to String {
+enum abstract SensorEventType(String) to String {
 	var CompassNeedsCalibration = "compassneedscalibration";
 	var DeviceLight = "devicelight";
 	var DeviceMotion = "devicemotion";

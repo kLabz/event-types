@@ -1,6 +1,6 @@
 package eventtypes;
 
-@:enum abstract TimeEventType(String) to String {
+enum abstract TimeEventType(String) to String {
 	/**
 		The beginEvent event is fired when the element local timeline begins to
 		play. It will be raised each time the element begins the active

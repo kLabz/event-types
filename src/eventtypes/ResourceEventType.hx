@@ -1,6 +1,6 @@
 package eventtypes;
 
-@:enum abstract ResourceEventType(String) to String {
+enum abstract ResourceEventType(String) to String {
 	/**
 		The cached event is fired when the resources listed in the application
 		cache manifest have been downloaded, and the application is now cached.

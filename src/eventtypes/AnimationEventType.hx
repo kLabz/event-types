@@ -1,6 +1,6 @@
 package eventtypes;
 
-@:enum abstract AnimationEventType(String) to String {
+enum abstract AnimationEventType(String) to String {
 	/**
 		The animationstart event is fired when a CSS animation has started.
 

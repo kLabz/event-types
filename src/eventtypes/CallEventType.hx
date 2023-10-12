@@ -3,7 +3,7 @@ package eventtypes;
 /**
 	Auto generated from MDN event reference.
 **/
-@:enum abstract CallEventType(String) to String {
+enum abstract CallEventType(String) to String {
 	var Alerting = "alerting";
 	var Busy = "busy";
 	var CallsChanged = "callschanged";

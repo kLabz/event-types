@@ -3,7 +3,7 @@ package eventtypes;
 /**
 	Auto generated from MDN event reference.
 **/
-@:enum abstract WebsocketEventType(String) to String {
+enum abstract WebsocketEventType(String) to String {
 	/**
 		A WebSocket connection has been established.
 	**/

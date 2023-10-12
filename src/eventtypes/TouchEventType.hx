@@ -1,6 +1,6 @@
 package eventtypes;
 
-@:enum abstract TouchEventType(String) to String {
+enum abstract TouchEventType(String) to String {
 	/**
 		The touchcancel event is fired when a touch point has been disrupted in
 		an implementation-specific manner (for example, too many touch points

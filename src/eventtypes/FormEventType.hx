@@ -1,6 +1,6 @@
 package eventtypes;
 
-@:enum abstract FormEventType(String) to String {
+enum abstract FormEventType(String) to String {
 	/**
 		The reset event is fired when a form is reset.
 

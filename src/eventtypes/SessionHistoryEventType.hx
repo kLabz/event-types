@@ -3,7 +3,7 @@ package eventtypes;
 /**
 	Auto generated from MDN event reference.
 **/
-@:enum abstract SessionHistoryEventType(String) to String {
+enum abstract SessionHistoryEventType(String) to String {
 	/**
 		A session history entry is being traversed from.
 	**/

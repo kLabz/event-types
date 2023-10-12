@@ -1,6 +1,6 @@
 package eventtypes;
 
-@:enum abstract PointerEventType(String) to String {
+enum abstract PointerEventType(String) to String {
 	/**
 		The pointerover event is fired when a pointing device is moved into an
 		element's hit test boundaries.

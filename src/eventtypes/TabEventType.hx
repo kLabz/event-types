@@ -3,7 +3,7 @@ package eventtypes;
 /**
 	Auto generated from MDN event reference.
 **/
-@:enum abstract TabEventType(String) to String {
+enum abstract TabEventType(String) to String {
 	var TabOpen = "TabOpen";
 	var TabClose = "TabClose";
 	var TabSelect = "TabSelect";

@@ -3,7 +3,7 @@ package eventtypes;
 /**
 	Auto generated from MDN event reference.
 **/
-@:enum abstract PopupEventType(String) to String {
+enum abstract PopupEventType(String) to String {
 	var PopupHidden = "popuphidden";
 	var PopupHiding = "popuphiding";
 	var PopupShowing = "popupshowing";

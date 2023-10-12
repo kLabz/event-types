@@ -3,7 +3,7 @@ package eventtypes.electron;
 /**
 	Auto generated from electron 2.0.2 api docs.
 **/
-@:enum abstract TrayEventType(String) to String
+enum abstract TrayEventType(String) to String
 #if hxnodejs to js.node.events.EventEmitter.Event<haxe.Constraints.Function> #end
 {
 	/**

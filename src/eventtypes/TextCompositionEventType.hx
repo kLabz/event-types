@@ -3,7 +3,7 @@ package eventtypes;
 /**
 	Auto generated from MDN event reference.
 **/
-@:enum abstract TextCompositionEventType(String) to String {
+enum abstract TextCompositionEventType(String) to String {
 	/**
 		The composition of a passage of text is prepared (similar to keydown
 		for a keyboard input, but works with other inputs such as speech

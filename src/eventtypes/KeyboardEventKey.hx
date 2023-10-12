@@ -12,14 +12,14 @@ package eventtypes;
 		.filter(k => filter.test(k))
 		.forEach(k => keys.add(filter.exec(k)[1]));
 
-	var output = "@:enum abstract KeyboardEventKey(String) from String to String {\n";
+	var output = "enum abstract KeyboardEventKey(String) from String to String {\n";
 	keys.forEach(k => output += "\tpublic static inline var " + k + " = '" + k + "';\n");
 	output += "}";
 	```
 
 	[1]: https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values
 */
-@:enum abstract KeyboardEventKey(String) from String to String {
+enum abstract KeyboardEventKey(String) from String to String {
 	public static inline var Unidentified = 'Unidentified';
 	public static inline var Alt = 'Alt';
 	public static inline var AltGraph = 'AltGraph';

@@ -1,6 +1,6 @@
 package eventtypes;
 
-@:enum abstract GamePadEventType(String) to String {
+enum abstract GamePadEventType(String) to String {
 	/**
 		The gamepadconnected event is fired when the browser detects that a
 		gamepad has been connected or the first time a button/axis of the

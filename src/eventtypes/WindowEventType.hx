@@ -3,7 +3,7 @@ package eventtypes;
 /**
 	Auto generated from MDN event reference.
 **/
-@:enum abstract WindowEventType(String) to String {
+enum abstract WindowEventType(String) to String {
 	var DOMWindowCreated = "DOMWindowCreated";
 	var DOMTitleChanged = "DOMTitleChanged";
 	var DOMWindowClose = "DOMWindowClose";

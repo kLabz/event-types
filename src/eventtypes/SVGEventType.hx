@@ -1,6 +1,6 @@
 package eventtypes;
 
-@:enum abstract SVGEventType(String) to String {
+enum abstract SVGEventType(String) to String {
 	/**
 		The SVGAbort event is fired when page loading is stopped before an
 		element has been allowed to load completely.

@@ -1,6 +1,6 @@
 package eventtypes;
 
-@:enum abstract NetworkEventType(String) to String {
+enum abstract NetworkEventType(String) to String {
 	/**
 		The online event is fired when the browser has gained access to the
 		network and the value of navigator.onLine switched to true.

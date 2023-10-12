@@ -1,6 +1,6 @@
 package eventtypes;
 
-@:enum abstract ClipboardEventType(String) to String {
+enum abstract ClipboardEventType(String) to String {
 	/**
 		The copy event is fired when the user initiates a copy action through
 		the browser UI (for example, using the CTRL/Cmd+C keyboard shortcut or

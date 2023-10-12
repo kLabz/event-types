@@ -1,6 +1,6 @@
 package eventtypes;
 
-@:enum abstract ProgressEventType(String) to String {
+enum abstract ProgressEventType(String) to String {
 	/**
 		The abort event is fired when progression has been terminated (not due
 		to an error).

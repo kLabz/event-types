@@ -1,6 +1,6 @@
 package eventtypes;
 
-@:enum abstract MouseEventType(String) to String {
+enum abstract MouseEventType(String) to String {
 	/**
 		The click event is fired when a pointing device button (usually a
 		mouse's primary button) is pressed and released on a single element.

@@ -3,7 +3,7 @@ package eventtypes;
 /**
 	Auto generated from MDN event reference.
 **/
-@:enum abstract DOMMutationEventType(String) to String {
+enum abstract DOMMutationEventType(String) to String {
 	var DOMAttributeNameChanged = "DOMAttributeNameChanged";
 	var DOMAttrModified = "DOMAttrModified";
 	var DOMCharacterDataModified = "DOMCharacterDataModified";

@@ -1,6 +1,6 @@
 package eventtypes;
 
-@:enum abstract ViewEventType(String) to String {
+enum abstract ViewEventType(String) to String {
 	/**
 		The fullscreenchange event is fired when the browser is switched
 		to/out-of fullscreen mode.

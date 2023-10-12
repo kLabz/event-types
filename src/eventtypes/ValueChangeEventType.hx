@@ -1,6 +1,6 @@
 package eventtypes;
 
-@:enum abstract ValueChangeEventType(String) to String {
+enum abstract ValueChangeEventType(String) to String {
 	/**
 		The broadcast event is executed when the attributes of the element
 		(such as a broadcaster) being listened to are changed. The event

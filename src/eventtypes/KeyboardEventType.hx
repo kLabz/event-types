@@ -1,6 +1,6 @@
 package eventtypes;
 
-@:enum abstract KeyboardEventType(String) to String {
+enum abstract KeyboardEventType(String) to String {
 	/**
 		The keydown event is fired when a key is pressed down. Unlike the
 		keypress event, the keydown event is fired for keys that produce a

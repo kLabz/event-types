@@ -1,6 +1,6 @@
 package eventtypes;
 
-@:enum abstract TransitionEventType(String) to String {
+enum abstract TransitionEventType(String) to String {
 	/**
 		The transitioncancel event is fired when a CSS transition is canceled.
 

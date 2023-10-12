@@ -1,6 +1,6 @@
 package eventtypes;
 
-@:enum abstract MediaEventType(String) to String {
+enum abstract MediaEventType(String) to String {
 	/**
 		The durationchange event is fired when the duration attribute has been
 		updated.

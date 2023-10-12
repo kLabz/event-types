@@ -1,6 +1,6 @@
 package eventtypes.cordova;
 
-@:enum abstract CordovaEventType(String) to String {
+enum abstract CordovaEventType(String) to String {
 	/**
 		The deviceready event is fired when the cordova application is starting
 		(not resuming from background).

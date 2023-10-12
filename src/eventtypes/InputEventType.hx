@@ -1,6 +1,6 @@
 package eventtypes;
 
-@:enum abstract InputEventType(String) to String {
+enum abstract InputEventType(String) to String {
 	/**
 		The `change` event is fired for `<input>`, `<select>`, and `<textarea>`
 		elements when an alteration to the element's value is committed by the

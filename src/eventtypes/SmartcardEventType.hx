@@ -3,7 +3,7 @@ package eventtypes;
 /**
 	Auto generated from MDN event reference.
 **/
-@:enum abstract SmartcardEventType(String) to String {
+enum abstract SmartcardEventType(String) to String {
 	var ICCCardLockError = "icccardlockerror";
 	var ICCInfoChange = "iccinfochange";
 	var SmartcardInsert = "smartcard-insert";

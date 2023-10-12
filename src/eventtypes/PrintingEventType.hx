@@ -1,6 +1,6 @@
 package eventtypes;
 
-@:enum abstract PrintingEventType(String) to String {
+enum abstract PrintingEventType(String) to String {
 	/**
 		The beforeprint event is fired when the associated document is about to
 		be printed or previewed for printing.

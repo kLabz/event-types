@@ -1,6 +1,6 @@
 package eventtypes;
 
-@:enum abstract FocusEventType(String) to String {
+enum abstract FocusEventType(String) to String {
 	/**
 		The blur event is fired when an element has lost focus. The main
 		difference between this event and focusout is that only the latter

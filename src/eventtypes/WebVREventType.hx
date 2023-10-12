@@ -3,7 +3,7 @@ package eventtypes;
 /**
 	Auto generated from MDN event reference.
 **/
-@:enum abstract WebVREventType(String) to String {
+enum abstract WebVREventType(String) to String {
 	/**
 		when a compatible `VRDisplay` is connected to the computer.
 	**/
